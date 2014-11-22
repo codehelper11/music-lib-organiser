@@ -14,11 +14,6 @@
             <artifactId>guava</artifactId>
             <version>18.0</version>
         </dependency>
-       <!-- <dependency>
-            <groupId>com.googlecode.soundlibs</groupId>
-            <artifactId>mp3spi</artifactId>
-            <version>1.9.5-1</version>
-        </dependency>-->
         <dependency>
             <groupId>org.blinkenlights.jid3</groupId>
             <artifactId>JID3</artifactId>
