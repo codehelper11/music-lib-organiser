@@ -21,7 +21,11 @@ public class FileOperation {
     private void applyRuleToFiles(File directory, Rule rule) {
         for (File file : directory.listFiles()) {
             if (file.isFile()) {
-                rule.apply(file);
+                try {
+                    rule.apply(file);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
             } else if (file.isDirectory()) {
                 applyRuleToFiles(file, rule);
             }

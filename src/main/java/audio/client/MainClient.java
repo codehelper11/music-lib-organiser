@@ -13,14 +13,16 @@ public class MainClient {
         System.out.println("-----------------------------------------------");
 
         new FileOperation().applyOperationOnEachFileInDirectory(
-                new File("F:\\songs\\old is gold\\Kishore & Lata"),
+                new File("F:\\songs\\hindi movie songs"),
                 true,
                 new Rule[]{
-                        //new RemoveExtraCharsFromFileName(),
+                        //new RemoveExtraCharsFromFileName()
                         //new UpdateAlbumPropertyWithGivenValue("oldies_kishore&Lata"),
-                        //new UpdateGenrePropertyWithGivenValue("oldies"),
-                        //new UpdateTrackPropertyWithFileName(),
-                        new UpdateArtistPropertyWithGivenValue("Kishore&Lata")
+                        //new UpdateGenrePropertyWithGivenValue("gazals"),
+                        //new UpdateTrackPropertyWithFileName()
+                        //new UpdateArtistPropertyWithGivenValue("John Denver")
+                        //new PrintFileHavingGivenText("track")
+                        new UpdateAlbumPropertyWithFolderName()
                 });
 
     }

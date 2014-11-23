@@ -15,7 +15,7 @@ public class RemoveExtraCharsFromFileName implements Rule {
         Preconditions.checkNotNull(file, "File is required");
         Preconditions.checkState(file.isFile(), "Not a valid file");
 
-        if (isAudioFile(file)) {
+        if (isAudioFile(file) && !file.getName().toLowerCase().contains("track")) {
             String newFileName = removeExtraCharsFromName(file);
             if (isNameChanged(file.getName(), newFileName)) {
                 renameFile(file, newFileName);
